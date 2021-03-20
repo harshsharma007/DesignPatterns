@@ -1,0 +1,9 @@
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\bin\Debug\netstandard2.0\Logger.deps.json
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\bin\Debug\netstandard2.0\Logger.dll
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\bin\Debug\netstandard2.0\Logger.pdb
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\obj\Debug\netstandard2.0\Logger.csprojAssemblyReference.cache
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\obj\Debug\netstandard2.0\Logger.AssemblyInfo.cs
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\obj\Debug\netstandard2.0\Logger.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\obj\Debug\netstandard2.0\Logger.dll
+C:\Users\DELL\source\repos\DesignPatterns\ExceptionLoggingUsingSingletonDesignPattern\Logger\obj\Debug\netstandard2.0\Logger.pdb

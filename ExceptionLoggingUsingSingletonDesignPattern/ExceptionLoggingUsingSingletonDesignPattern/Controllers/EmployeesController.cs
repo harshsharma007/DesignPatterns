@@ -7,12 +7,26 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ExceptionLoggingUsingSingletonDesignPattern.Models;
+using Logger;
 
 namespace ExceptionLoggingUsingSingletonDesignPattern.Controllers
 {
     public class EmployeesController : Controller
     {
+        private ILog _ILog;
         private EmployeePortalEntities db = new EmployeePortalEntities();
+
+        public EmployeesController()
+        {
+            _ILog = Log.GetInstance;
+        }
+
+        protected override void OnException(ExceptionContext filterContext)
+        {
+            _ILog.LogException(filterContext.Exception.ToString());
+            filterContext.ExceptionHandled = true;
+            this.View("Error").ExecuteResult(this.ControllerContext);
+        }
 
         // GET: Employees
         public ActionResult Index()
