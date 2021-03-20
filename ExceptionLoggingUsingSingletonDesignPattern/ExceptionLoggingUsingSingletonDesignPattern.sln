@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionLoggingUsingSingletonDesignPattern", "ExceptionLoggingUsingSingletonDesignPattern\ExceptionLoggingUsingSingletonDesignPattern.csproj", "{D14F0852-1DF2-4C39-9372-1F6FF9D4CF47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{47EE8DBC-B376-4F60-A959-ADB0C5FF512D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D14F0852-1DF2-4C39-9372-1F6FF9D4CF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14F0852-1DF2-4C39-9372-1F6FF9D4CF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14F0852-1DF2-4C39-9372-1F6FF9D4CF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14F0852-1DF2-4C39-9372-1F6FF9D4CF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EE8DBC-B376-4F60-A959-ADB0C5FF512D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EE8DBC-B376-4F60-A959-ADB0C5FF512D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EE8DBC-B376-4F60-A959-ADB0C5FF512D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EE8DBC-B376-4F60-A959-ADB0C5FF512D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55535479-00DF-44D9-BD1F-EB0A56F88C13}
+	EndGlobalSection
+EndGlobal
