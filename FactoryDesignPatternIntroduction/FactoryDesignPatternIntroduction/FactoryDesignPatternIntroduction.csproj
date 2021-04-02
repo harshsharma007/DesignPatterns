@@ -96,9 +96,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\EmployeePortal.mdf" />
-    <Content Include="App_Data\EmployeePortal_log.ldf">
-      <DependentUpon>EmployeePortal.mdf</DependentUpon>
+    <Content Include="App_Data\NewEmployeePortal.mdf" />
+    <Content Include="App_Data\NewEmployeePortal_log.ldf">
+      <DependentUpon>NewEmployeePortal.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
