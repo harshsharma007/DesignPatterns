@@ -12,6 +12,7 @@
     <Property Name="Bonus" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="EmployeeTypeID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Employee_Type" Relationship="Self.FK_Employee_Employee_Type" FromRole="Employee" ToRole="Employee_Type" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Employee_Type">
     <Key>

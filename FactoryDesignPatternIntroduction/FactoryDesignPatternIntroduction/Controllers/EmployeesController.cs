@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using FactoryDesignPatternIntroduction.Factory;
+using FactoryDesignPatternIntroduction.Managers;
 using FactoryDesignPatternIntroduction.Models;
 using Logger;
 
@@ -23,7 +25,7 @@ namespace FactoryDesignPatternIntroduction.Controllers
         // GET: Employees
         public ActionResult Index()
         {
-            var employees = db.Employees.Include(e => e.Id);
+            var employees = db.Employees;
             return View(employees.ToList());
         }
 
@@ -45,6 +47,7 @@ namespace FactoryDesignPatternIntroduction.Controllers
         // GET: Employees/Create
         public ActionResult Create()
         {
+            ViewBag.EmployeeTypeID = new SelectList(db.Employee_Type, "Id", "EmployeeType", "EmployeeTypeID");
             return View();
         }
 
@@ -57,16 +60,26 @@ namespace FactoryDesignPatternIntroduction.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (employee.EmployeeTypeID == 1)
-                {
-                    employee.HourlyPay = 8;
-                    employee.Bonus = 10;
-                }
-                else if (employee.EmployeeTypeID == 2)
-                {
-                    employee.HourlyPay = 12;
-                    employee.Bonus = 5;
-                }
+                /*
+                    THIS IS AN EXAMPLE OF TIGHT COUPLING
+                    
+                    if (employee.EmployeeTypeID == 1)
+                    {
+                        employee.HourlyPay = 8;
+                        employee.Bonus = 10;
+                    }
+                    else if (employee.EmployeeTypeID == 2)
+                    {
+                        employee.HourlyPay = 12;
+                        employee.Bonus = 5;
+                    }
+                */
+
+                EmployeeManagerFactory empFactory = new EmployeeManagerFactory();
+                IEmployeeManager empManager = empFactory.GetEmployeeManager(employee.EmployeeTypeID);
+                employee.Bonus = empManager.GetBonus();
+                employee.HourlyPay = empManager.GetPay();
+
                 db.Employees.Add(employee);
                 db.SaveChanges();
                 return RedirectToAction("Index");
